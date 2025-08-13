@@ -1,0 +1,45 @@
+#include <stdio.h>
+int main() {
+    int i;
+    float f;
+    double d;
+    char c;
+    short s;
+    long l;
+    long long ll;
+    unsigned int ui;
+    unsigned char uc;
+    unsigned long ul;
+    printf("Enter an integer: ");
+    scanf("%d", &i);
+    printf("Enter a float: ");
+    scanf("%f", &f);
+    printf("Enter a double: ");
+    scanf("%lf", &d);
+    printf("Enter a character: ");
+    scanf(" %c", &c);
+    printf("Enter a short: ");
+    scanf("%hd", &s);
+    printf("Enter a long: ");
+    scanf("%ld", &l);
+    printf("Enter a long long: ");
+    scanf("%lld", &ll);
+    printf("Enter an unsigned int: ");
+    scanf("%u", &ui);
+    printf("Enter an unsigned long: ");
+    scanf("%lu", &ul);
+    printf("Enter an unsigned char (as number): ");
+    scanf("%hhu", &uc);
+    printf("\n--- Data Summary ---\n");
+    printf("int: %d (size: %zu bytes)\n", i, sizeof(i));
+    printf("float: %.2f (size: %zu bytes)\n", f, sizeof(f));
+    printf("double: %.2lf (size: %zu bytes)\n", d, sizeof(d));
+    printf("char: %c (size: %zu bytes)\n", c, sizeof(c));
+    printf("short: %hd (size: %zu bytes)\n", s, sizeof(s));
+    printf("long: %ld (size: %zu bytes)\n", l, sizeof(l));
+    printf("long long: %lld (size: %zu bytes)\n", ll, sizeof(ll));
+    printf("unsigned int: %u (size: %zu bytes)\n", ui, sizeof(ui));
+    printf("unsigned long: %lu (size: %zu bytes)\n", ul, sizeof(ul));
+    printf("unsigned char: %hhu (size: %zu bytes)\n", uc, sizeof(uc));
+    return 0;
+}
